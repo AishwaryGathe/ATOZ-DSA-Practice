@@ -1,0 +1,28 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile and run",
+      "type": "shell",
+      "command": "javac \"${file}\" && java ${fileBasenameNoExtension} < input.txt > output.txt",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "options": {
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/c"]
+        }
+      },
+      "problemMatcher": [],
+      "presentation": {
+        "reveal": "silent",        // Do NOT auto-pop terminal
+        "focus": false,            // Keep editor focused
+        "panel": "dedicated",      // Reuse same panel each time
+        "showReuseMessage": false, // Don’t show reuse notice
+        "clear": true              // Clear old output each run
+      }
+    }
+  ]
+}
