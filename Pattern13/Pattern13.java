@@ -2,7 +2,7 @@ package Pattern13;
 
 import java.util.Scanner;
 
-public class main {
+public class Pattern13 {
     public static void pat13(int n)
     {
         int num =1;
