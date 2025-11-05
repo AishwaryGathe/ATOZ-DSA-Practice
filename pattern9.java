@@ -20,5 +20,6 @@ public class pattern9{
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         pat9(n);
+        sc.close();
     }
 }

@@ -1,7 +1,4 @@
 package Pattern4;
-import java.io.*;
-import java.util.*;
-
 
 public class Main {
 

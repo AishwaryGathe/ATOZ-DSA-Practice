@@ -22,5 +22,6 @@ public class Pattern8 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         pat8(n);
+        sc.close();
     }
 }

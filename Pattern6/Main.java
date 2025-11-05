@@ -1,6 +1,3 @@
-import java.io.*;
-import java.util.*;
-
 class Main{
     static void pattern6(int n){
         for(int i=1;i<=5;i++)

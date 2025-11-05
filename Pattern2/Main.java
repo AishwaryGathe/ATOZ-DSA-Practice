@@ -1,7 +1,3 @@
-import java.io.*;
-import java.util.*;
-
-
 class Main {
 
     static void pattern2(int n){

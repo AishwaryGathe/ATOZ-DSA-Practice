@@ -1,6 +1,4 @@
-package Patern5;
-import java.io.*;
-import java.util.*;
+package Pattern5;
 
 public class Main {
     static void pattern5(int n){
