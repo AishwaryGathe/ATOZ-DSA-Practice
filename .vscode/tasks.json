@@ -5,24 +5,37 @@
       "label": "compile and run",
       "type": "shell",
       "command": "javac \"${file}\" && java ${fileBasenameNoExtension} < input.txt > output.txt",
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
+      "group": "build",
       "options": {
         "shell": {
           "executable": "cmd.exe",
-          "args": ["/c"]
+          "args": [
+            "/c"
+          ]
         }
       },
       "problemMatcher": [],
       "presentation": {
-        "reveal": "silent",        // Do NOT auto-pop terminal
-        "focus": false,            // Keep editor focused
-        "panel": "dedicated",      // Reuse same panel each time
-        "showReuseMessage": false, // Don’t show reuse notice
-        "clear": true              // Clear old output each run
+        "reveal": "silent",
+        "focus": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
       }
+    },
+    {
+      "type": "java (build)",
+      "paths": [
+        "${workspace}"
+      ],
+      "isFullBuild": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "java (build): Build Workspace",
+      "detail": "$(tools) Build all the Java projects in workspace."
     }
   ]
 }
