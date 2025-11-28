@@ -15,7 +15,7 @@ public class stack {
         students.push("Rupesh");
         students.pop();
 
-        // System.out.println(students);
+        System.out.println(students);
 
 
         Queue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
